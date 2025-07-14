@@ -50,7 +50,7 @@ while loop_count is None or current_count < loop_count:
         logger.info(f"Processing table: {table_name}")
         
         # Get the new data and the number of rows according to last_id
-        rownum_data, new_data = get_new_inserted_data(last_id, cursor, table_name)
+        rownum_data, new_data = get_new_inserted_data(last_id, cursor, table_name) 
 
         # Get the parameters of IoTDB, and divide them according to device_size
         device_size = 60
